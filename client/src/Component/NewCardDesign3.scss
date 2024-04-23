@@ -1,0 +1,1598 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stylish&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.newCard_design_container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/Background/new_card_design3.2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: auto;
+  position: relative;
+
+  .card_design_box1 {
+    opacity: 1;
+    min-width: 35%;
+    width: 35%;
+    min-height: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: 900;
+    position: absolute;
+    background-color: #fffbbf;
+
+    .card3_box-1 {
+      position: relative;
+      width: 100%;
+      .banner {
+        position: relative;
+        img {
+          position: relative;
+          top: 0%;
+          width: 100%;
+          max-height: 30vh;
+
+          height: 30vh;
+          object-fit: cover;
+          object-position: center;
+        }
+        .user_basic {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+
+          .logo {
+            position: absolute;
+            bottom: -0%;
+            left: 8%;
+            z-index: 700;
+
+            img {
+              padding: 10px;
+              background-color: lightgoldenrodyellow;
+              width: 80px;
+              position: relative;
+              max-width: 80px;
+              max-height: 80px;
+              height: 80px;
+              z-index: 600;
+              border-radius: 50%;
+              border: 2px solid #d68328;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+
+        .svg_bottom {
+          position: absolute;
+          bottom: -4%;
+          width: 100%;
+          z-index: 500;
+        }
+      }
+    }
+    .card3_box-2 {
+      position: relative;
+      width: 100%;
+      padding: 0.1rem 0.5rem;
+
+      .user_details {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+
+        .logo {
+          flex: 0.3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 1.5rem auto;
+          position: relative;
+          img {
+            width: 55px;
+            height: 55px;
+            border-radius: 1rem;
+            border-bottom-left-radius: 2rem;
+
+            object-fit: cover;
+            object-position: center;
+            z-index: 600;
+          }
+
+          .graph {
+            img:nth-child(1) {
+              position: absolute;
+              width: 180px;
+              height: 180px;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 10;
+            }
+            img:nth-child(2) {
+              position: absolute;
+              width: 150px;
+              height: 150px;
+
+              left: 55%;
+              top: 55%;
+              transform: translate(-50%, -50%);
+              z-index: 600;
+            }
+          }
+
+          .alphabet {
+            position: absolute;
+            top: 200%;
+            left: 20%;
+            z-index: 900;
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+
+            img:nth-child(1) {
+              margin-bottom: 1rem;
+              transform: rotate(20deg);
+            }
+            img:nth-child(2) {
+              transform: rotate(-20deg);
+            }
+            img:nth-child(3) {
+              margin-bottom: 2rem;
+              transform: rotate(-40deg);
+            }
+          }
+        }
+
+        .details {
+          flex: 0.7;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 5px;
+
+          p {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #000;
+          }
+
+          small {
+            font-size: 0.9rem;
+            color: tomato;
+            font-weight: 500;
+          }
+
+          .summary {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            justify-content: center;
+            gap: 10px;
+            p {
+              width: 100%;
+              font-size: 0.8rem;
+              font-weight: 500;
+              letter-spacing: 1px;
+              line-height: 1.4rem;
+            }
+
+            .social_media {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              padding: 10px;
+              gap: 1.7rem;
+              row-gap: 1rem;
+
+              a {
+                text-decoration: none;
+                .icon {
+                  position: relative;
+                  cursor: pointer;
+                  transition: all 0.4s ease-in;
+                  i {
+                    font-size: 1.4rem;
+                    z-index: 800;
+                    color: #ffffff;
+                  }
+                  img {
+                    position: absolute;
+                    left: 50%;
+                    top: 35%;
+                    transform: translate(-45%, -50%);
+                    width: 60px;
+                    height: 60px;
+                    z-index: -10;
+                  }
+
+                  &:hover {
+                    filter: drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.4));
+                    transition: all 0.4s ease-in;
+                  }
+                }
+              }
+
+              &::-webkit-scrollbar {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .card3_box_3 {
+      position: relative;
+      width: 100%;
+      padding: 1rem 0.5rem;
+      margin: auto;
+
+      .contact_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+
+        h4 {
+          z-index: 600;
+          font-size: 1.2rem;
+          /* Fallback: Set a background color. */
+          background-color: #ca4246;
+
+          /* Create the gradient. */
+          background-image: linear-gradient(
+            45deg,
+            #000 16.666%,
+            #000 16.666%,
+            #000 33.333%,
+            #000 33.333%,
+            #000 50%,
+            #000 50%,
+            #000 66.666%,
+            #000 66.666%,
+            #000 83.333%,
+            #000 83.333%
+          );
+
+          /* Set the background size and repeat properties. */
+          background-size: 100%;
+          background-repeat: repeat;
+
+          /* Use the text as a mask for the background. */
+          /* This will show the gradient as a text color rather than element bg. */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+          &:hover {
+            animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+          }
+        }
+
+        img {
+          z-index: -1;
+          position: absolute;
+          left: 18%;
+          bottom: -520%;
+
+          // transform: translate(-50%,-50%);
+          transform: rotate(25deg);
+          width: 260px;
+          height: 260px;
+
+          @media screen and (max-width:900px){
+            left: 7%;
+            bottom: -520%;
+        
+          }
+        }
+      }
+      .contact_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 1.5rem;
+        margin: 1rem auto;
+        padding: 1rem 1rem;
+
+        .box {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          .icons {
+            position: relative;
+            img:nth-child(1) {
+              width: 30px;
+              height: 30px;
+            }
+            img:nth-child(2) {
+              position: absolute;
+              left: -30%;
+              bottom: -10%;
+              width: 52px;
+              height: 52px;
+            }
+          }
+          .detail {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 1px;
+
+            p {
+              width: 100%;
+              font-weight: 550;
+              font-size: 0.8rem;
+
+              @media screen and (max-width: 900px) {
+                font-size: 0.7rem;
+              }
+            }
+            small {
+              font-size: 0.6rem;
+              font-weight: 550;
+              color: darkgray;
+              @media screen and (max-width: 900px) {
+                font-size: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .card3_box_4 {
+      position: relative;
+      width: 100%;
+      padding: 1rem 0rem;
+      margin: auto;
+
+      .service_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+
+        h4 {
+          z-index: 600;
+          font-size: 1.2rem;
+          /* Fallback: Set a background color. */
+          background-color: #ca4246;
+
+          /* Create the gradient. */
+          background-image: linear-gradient(
+            45deg,
+            #000 16.666%,
+            #000 16.666%,
+            #000 33.333%,
+            #000 33.333%,
+            #000 50%,
+            #000 50%,
+            #000 66.666%,
+            #000 66.666%,
+            #000 83.333%,
+            #000 83.333%
+          );
+
+          /* Set the background size and repeat properties. */
+          background-size: 100%;
+          background-repeat: repeat;
+
+          /* Use the text as a mask for the background. */
+          /* This will show the gradient as a text color rather than element bg. */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+          &:hover {
+            animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+          }
+        }
+
+        img {
+          z-index: -1;
+          position: absolute;
+          left: 18%;
+          bottom: -520%;
+
+          // transform: translate(-50%,-50%);
+          transform: rotate(25deg);
+          width: 260px;
+          height: 260px;
+
+          @media screen and (max-width:900px){
+            left: 7%;
+            bottom: -520%;
+        
+          }
+        }
+      }
+      .service_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        margin: 2rem auto;
+        padding: 1rem 1rem;
+
+        .box {
+          padding: 1rem;
+          border: 1px solid gray;
+          z-index: -200;
+          border-radius: 2rem;
+          border-top-right-radius: 5rem;
+          position: relative;
+
+          .icons {
+            position: absolute;
+            left: 20%;
+            top: -10%;
+
+            img:nth-child(1) {
+              width: 40px;
+              z-index: 700;
+              height: 40px;
+            }
+            img:nth-child(2) {
+              width: 100px;
+              height: 100px;
+              z-index: -100;
+              position: absolute;
+              left: -80%;
+              top: -50%;
+            }
+          }
+          h5 {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            line-height: 1.5rem;
+            padding-top: 1.5rem;
+          }
+          small {
+            font-size: 0.7rem;
+            font-weight: 500;
+            line-height: 0.5rem;
+          }
+        }
+      }
+      .more_servies {
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+        padding: 0px 1rem;
+        small {
+          font-size: 0.8rem;
+          font-weight: 500;
+          color: royalblue;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .card3_box_5 {
+      position: relative;
+      width: 100%;
+      padding: 1rem 0rem;
+      margin: auto;
+
+      .appoinment_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+
+        h4 {
+          z-index: 600;
+          font-size: 1.2rem;
+          /* Fallback: Set a background color. */
+          background-color: #ca4246;
+
+          /* Create the gradient. */
+          background-image: linear-gradient(
+            45deg,
+            #000 16.666%,
+            #000 16.666%,
+            #000 33.333%,
+            #000 33.333%,
+            #000 50%,
+            #000 50%,
+            #000 66.666%,
+            #000 66.666%,
+            #000 83.333%,
+            #000 83.333%
+          );
+
+          /* Set the background size and repeat properties. */
+          background-size: 100%;
+          background-repeat: repeat;
+
+          /* Use the text as a mask for the background. */
+          /* This will show the gradient as a text color rather than element bg. */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+          &:hover {
+            animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+          }
+        }
+
+        img {
+          z-index: -1;
+          position: absolute;
+          left: -13%;
+          bottom: -520%;
+
+          // transform: translate(-50%,-50%);
+          transform: rotate(15deg);
+          width: 560px;
+          height: 260px;
+
+          @media screen and (max-width:900px){
+            transform: rotate(15deg);
+            width: 580px;
+            left: -28%;
+            bottom: -520%;
+        
+          }
+        }
+      }
+      .appoinment_container {
+        margin: 1rem auto;
+        padding: 10px 1rem;
+
+        form {
+          padding: 1rem 0.3rem;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .form_group {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+
+            label {
+              position: absolute;
+              top: 3%;
+              z-index: 200;
+              left: 7%;
+
+              img{
+                width: 30px;
+                height: 30px;
+              }
+            }
+            .setTime {
+              width: 90%;
+              position: relative;
+              margin: auto;
+              padding: 15px 3rem;
+              border: 1px solid rgb(252, 177, 255);
+              border-radius: 10px;
+              outline: none;
+              background: transparent;
+              background-color: rgb(255, 255, 255);
+              caret-color: #ca4246;
+              font-size: 0.9rem;
+              font-weight: 600;
+              color: rgb(49, 49, 49);
+              &::placeholder {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                font-family: "Poppins";
+                font-weight: 500;
+                font-style: normal;
+              }
+
+              &:focus {
+                border: 1px solid rgb(151, 255, 141);
+              }
+            }
+
+            .default_time {
+              width: 90%;
+              display: grid !important;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              grid-row-gap: 1rem;
+              grid-column-gap: 1rem;
+
+              margin: auto;
+              input {
+                width: 100%;
+                margin: auto;
+                padding: 15px 1rem;
+                border: 1px solid rgb(252, 177, 255);
+                border-radius: 10px;
+                outline: none;
+                background: transparent;
+                background-color: rgb(255, 255, 255);
+                caret-color: #ca4246;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                color: rgb(49, 49, 49);
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  background-color: rgb(16, 179, 255);
+                  color: #f1f1f1;
+                  border: 1px solid white;
+                  transition: all 0.3s ease-in-out;
+                }
+                &::placeholder {
+                  font-size: 0.8rem;
+                  letter-spacing: 1px;
+                  font-family: "Poppins";
+                  font-weight: 500;
+                  font-style: normal;
+                }
+
+                &:focus {
+                  border: 1px solid rgb(255, 255, 255);
+                  background-color: rgb(16, 179, 255);
+                  color: #ffffff;
+                }
+              }
+            }
+            .form_submit {
+              margin: auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+
+              button {
+
+                margin: 1rem auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px 1rem;
+                width: 80%;
+                outline: none;
+                border: transparent;
+                background-color: tomato;
+                font-size: 0.9rem;
+                font-weight: 550;
+                border-radius: 10px;
+                color: #ffffff;
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+
+                img{
+             width: 25px;
+             height: 25px;
+
+                }
+                &:hover {
+                  background-color: darkcyan;
+                  color: #ffffff;
+                  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.4));
+                  transition: all 0.4s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .card3_box_6 {
+      position: relative;
+      width: 100%;
+      padding: 1rem 0rem;
+      margin: auto;
+
+      .gallery_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+
+        h4 {
+          z-index: 600;
+          font-size: 1.2rem;
+          /* Fallback: Set a background color. */
+          background-color: #ca4246;
+
+          /* Create the gradient. */
+          background-image: linear-gradient(
+            45deg,
+            #000 16.666%,
+            #000 16.666%,
+            #000 33.333%,
+            #000 33.333%,
+            #000 50%,
+            #000 50%,
+            #000 66.666%,
+            #000 66.666%,
+            #000 83.333%,
+            #000 83.333%
+          );
+
+          /* Set the background size and repeat properties. */
+          background-size: 100%;
+          background-repeat: repeat;
+
+          /* Use the text as a mask for the background. */
+          /* This will show the gradient as a text color rather than element bg. */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+          &:hover {
+            animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+          }
+        }
+
+        img {
+          z-index: -1;
+          position: absolute;
+          left: 18%;
+          bottom: -520%;
+
+          // transform: translate(-50%,-50%);
+          transform: rotate(25deg);
+          width: 260px;
+          height: 260px;
+        }
+      }
+      .gallery_container {
+        margin: 1rem auto;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .gall_box {
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 90%;
+            height: 180px;
+          }
+        }
+      }
+    }
+    .card3_box_7 {
+      position: relative;
+      width: 100%;
+      padding: 1rem 0rem;
+      margin: auto;
+
+      .testimonial_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+
+        h4 {
+          z-index: 600;
+          font-size: 1.2rem;
+          /* Fallback: Set a background color. */
+          background-color: #ca4246;
+
+          /* Create the gradient. */
+          background-image: linear-gradient(
+            45deg,
+            #000 16.666%,
+            #000 16.666%,
+            #000 33.333%,
+            #000 33.333%,
+            #000 50%,
+            #000 50%,
+            #000 66.666%,
+            #000 66.666%,
+            #000 83.333%,
+            #000 83.333%
+          );
+
+          /* Set the background size and repeat properties. */
+          background-size: 100%;
+          background-repeat: repeat;
+
+          /* Use the text as a mask for the background. */
+          /* This will show the gradient as a text color rather than element bg. */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+          &:hover {
+            animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+          }
+        }
+
+        img {
+          z-index: -1;
+          position: absolute;
+          left: 18%;
+          bottom: -520%;
+
+          // transform: translate(-50%,-50%);
+          transform: rotate(25deg);
+          width: 260px;
+          height: 260px;
+
+          @media screen and (max-width:900px){
+        
+            transform: rotate(20deg);
+            width: 350px;
+            left: -3%;
+            bottom: -520%;
+        
+          }
+        }
+      }
+      .Testimonial {
+        margin: 5rem auto;
+        width: 100%;
+        min-height: 300px;
+        height: 300px;
+        position: relative;
+        background-color: #010101;
+
+        .testimonial_box {
+          width: 95%;
+          padding: 1rem;
+          margin: 10px auto;
+          background-color: #ffffff;
+          z-index: 900;
+          border-radius: 2rem;
+          border-top-left-radius: 5rem;
+          border-bottom-right-radius: 5rem;
+          height: 250px;
+          position: absolute;
+          display: flex;
+          // align-items: center;
+          // justify-content: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          .content{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 0.5rem;
+
+            .user_Detail{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1.5rem;
+              width: 100%;
+
+              img{
+                width: 70px;
+                height: 70px;
+                border-radius: 1rem;
+               
+                border: 2px solid rgb(48, 48, 48);
+                border-top: 5px solid rgb(78, 214, 255);
+                object-fit: cover;
+                object-position: center;
+                border-bottom-left-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+              }
+
+           
+            }
+            .name{
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 3px;
+
+              p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                font-size: 0.9rem;
+                font-weight: 550;
+                color: royalblue;
+                text-align: start;
+
+                i{
+                  color: tomato;
+                }
+              }
+
+              span{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 5px;
+
+                i{
+                  font-size: 1rem;
+                  color: rgb(17, 95, 40);
+                }
+
+
+              }
+            }
+            .feedbacks{
+
+              padding: 0px 0px;
+
+              p{
+             width: 95%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: start;
+                gap: 10px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-align: start;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                white-space: normal;
+                i{
+                  color: royalblue;
+                  font-size: 1.2rem;
+                }
+
+                @media screen and (max-width:900px){
+                  width: 90%;
+                  font-size: 0.7rem;
+                  word-wrap: break-word;
+                  overflow-wrap: break-word;
+                  white-space: normal;
+                }
+              }
+              
+            }
+            .feedback_date{
+              width: 90%;
+              display: flex;
+              padding: 5px 1rem;
+              align-items: flex-end;
+              justify-content: space-between;
+
+
+              img{
+                width: 30px;
+                height: 30px;
+              }
+              i{
+                color: green;
+                cursor: pointer;
+                font-size: 1.5rem;
+
+                &:hover{
+                  color: royalblue;
+                  filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+                  transition: all 0.5s ease-in;
+                }
+              }
+              small{
+                font-size: 0.8rem;
+                font-weight: 400;
+                color: rgb(49, 49, 49);
+              }
+            }
+          }
+        
+        }
+     
+        .qrsvg_top {
+          position: relative;
+          top: -26%;
+        }
+        .qrsvg_bottom {
+          position: relative;
+          bottom: -60%;
+          left: 0%;
+
+
+          @media screen and (max-width: 900px) {
+            position: relative;
+            bottom: -63%;
+            left: 0%;
+          }
+        }
+      }
+
+    }
+    .card3_box_8 {
+      position: relative;
+      width: 100%;
+      padding: 1rem 0rem;
+      margin: auto;
+
+      .inquries_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+
+        h4 {
+          z-index: 600;
+          font-size: 1.2rem;
+          /* Fallback: Set a background color. */
+          background-color: #ca4246;
+
+          /* Create the gradient. */
+          background-image: linear-gradient(
+            45deg,
+            #000 16.666%,
+            #000 16.666%,
+            #000 33.333%,
+            #000 33.333%,
+            #000 50%,
+            #000 50%,
+            #000 66.666%,
+            #000 66.666%,
+            #000 83.333%,
+            #000 83.333%
+          );
+
+          /* Set the background size and repeat properties. */
+          background-size: 100%;
+          background-repeat: repeat;
+
+          /* Use the text as a mask for the background. */
+          /* This will show the gradient as a text color rather than element bg. */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+          &:hover {
+            animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+          }
+        }
+
+        img {
+          z-index: -1;
+          position: absolute;
+          left: 5%;
+          bottom: -520%;
+
+          // transform: translate(-50%,-50%);
+          transform: rotate(20deg);
+          width: 390px;
+          height: 260px;
+
+          @media screen and (max-width:900px){
+            left: -10%;
+            bottom: -520%;
+          }
+        }
+      }
+      .equiry_container {
+        margin: 1rem auto;
+        padding: 1rem;
+
+        .enquiry_heading {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 14px;
+
+          h5 {
+            color: grey;
+            font-weight: 600;
+            font-size: 0.8rem;
+          }
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        form {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: auto;
+
+          .form_group {
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            margin: 1rem 0.2rem;
+
+            .error {
+              font-size: 0.6rem;
+              color: red !important;
+              -webkit-text-fill-color: rgb(252, 55, 55);
+              letter-spacing: 1px;
+              // width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+            }
+            label {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 3px;
+              top: -14px;
+              position: absolute;
+              padding: 0px 4px;
+
+              right: 5%;
+              color: rgb(199, 197, 197);
+              // background: linear-gradient(#000,tomato);
+              -webkit-text-fill-color: rgb(43, 42, 42);
+              font-size: 0.7rem;
+              font-weight: 550;
+              background-color: #fffbbf;
+              border-radius: 4px;
+
+              span {
+                font-size: 1rem;
+                color: red !important;
+                -webkit-text-fill-color: rgb(255, 31, 31);
+                sup {
+                  color: red !important;
+                }
+              }
+
+              @media screen and (max-width: 800px) {
+                right: 5%;
+              }
+            }
+
+            input {
+              width: 100%;
+              padding: 1rem 2rem;
+              // border: 2px solid rgb(177, 238, 128);
+              border: double 2px transparent;
+              border-radius: 0.5rem;
+
+              background-image: linear-gradient(#fffbbf, #fffbbf),
+                linear-gradient(to right, rgb(86, 131, 255), rgb(126, 61, 245));
+
+              background-origin: border-box;
+              background-clip: padding-box, border-box;
+              border-radius: 0.3rem;
+              outline: none;
+
+              transition: all 0.3s ease;
+              &::placeholder {
+                font-size: 0.6rem;
+                color: rgb(170, 168, 168);
+                letter-spacing: 1px;
+                font-weight: 400;
+              }
+              &:focus {
+                border: double 2px transparent;
+                border-radius: 0.3rem;
+                background-image: linear-gradient(#fffbbf, #fffbbf),
+                  linear-gradient(
+                    to right,
+                    rgb(32, 212, 236),
+                    rgb(252, 186, 186)
+                  );
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                transition: all 0.3s ease;
+              }
+
+              @media screen and (max-width: 800px) {
+                padding: 0.8rem 2rem;
+                width: 100%;
+                background-image: linear-gradient(#fffbbf, #fffbbf),
+                  linear-gradient(
+                    to right,
+                    rgb(131, 168, 247),
+                    rgb(32, 97, 236)
+                  );
+              }
+            }
+            textarea {
+              width: 100%;
+              padding: 1rem 2rem;
+              // border: 2px solid rgb(177, 238, 128);
+              border: double 2px transparent;
+              border-radius: 0.5rem;
+
+              background-image: linear-gradient(#fffbbf, #fffbbf),
+              linear-gradient(to right, rgb(86, 131, 255), rgb(126, 61, 245));
+
+              background-origin: border-box;
+              background-clip: padding-box, border-box;
+              border-radius: 0.3rem;
+              outline: none;
+
+              transition: all 0.3s ease;
+              &::placeholder {
+                font-size: 0.6rem;
+                color: rgb(170, 168, 168);
+                letter-spacing: 1px;
+                font-weight: 400;
+              }
+              &:focus {
+                border: double 2px transparent;
+                border-radius: 0.3rem;
+                background-image: linear-gradient(#fffbbf, #fffbbf),
+                  linear-gradient(
+                    to right,
+                    rgb(32, 212, 236),
+                    rgb(252, 186, 186)
+                  );
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                transition: all 0.3s ease;
+              }
+
+              @media screen and (max-width: 800px) {
+                padding: 0.8rem 2rem;
+                width: 100%;
+                background-image: linear-gradient(#fffbbf, #fffbbf),
+                  linear-gradient(
+                    to right,
+                    rgb(131, 168, 247),
+                    rgb(32, 97, 236)
+                  );
+              }
+            }
+
+            .icon {
+              position: absolute;
+              left: 2%;
+              top: 25%;
+
+            img{
+              width: 25px;
+              height: 25px;
+            }
+
+              @media screen and (max-width: 800px) {
+                position: absolute;
+                left: 2%;
+                top: 25%;
+              }
+            }
+            .show_pass {
+              position: absolute;
+              right: 2%;
+              top: 25%;
+
+              i {
+                font-size: 1.4rem;
+                color: skyblue;
+                cursor: pointer;
+              }
+
+              @media screen and (max-width: 800px) {
+                position: absolute;
+                right: 2%;
+                top: 25%;
+              }
+            }
+
+            @media screen and (max-width: 900px) {
+              margin: 0.8rem auto;
+            }
+          }
+          .form_actions {
+            margin: 1rem auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              // background-color: #2b2b2b;
+              width: 40%;
+              height: 50px;
+              outline: none;
+              border: transparent;
+              padding: 8px 1rem;
+              font-weight: 600;
+              letter-spacing: 1px;
+              font-size: 0.8rem;
+              border: 2px dashed black;
+              border-radius: 5rem;
+              cursor: pointer;
+              color: #000000;
+              transition: all 0.4s ease-in;
+img{
+  width: 25px;
+  height: 25px;
+}
+              .form_loader,
+              .form_loader:before,
+              .form_loader:after {
+                border-radius: 50%;
+                width: 1em;
+                height: 1em;
+                animation-fill-mode: both;
+                animation: bblFadInOut 1.8s infinite ease-in-out;
+              }
+              .form_loader {
+                color: #fff;
+                font-size: 7px;
+                position: relative;
+                text-indent: -9999em;
+                transform: translateZ(0);
+                animation-delay: -0.16s;
+              }
+              .form_loader:before,
+              .form_loader:after {
+                content: "";
+                position: absolute;
+                top: 0;
+              }
+              .form_loader:before {
+                left: -3.5em;
+                animation-delay: -0.32s;
+              }
+              .form_loader:after {
+                left: 3.5em;
+              }
+
+              @keyframes bblFadInOut {
+                0%,
+                80%,
+                100% {
+                  box-shadow: 0 2.5em 0 -1.3em;
+                }
+                40% {
+                  box-shadow: 0 2.5em 0 0;
+                }
+              }
+
+              &:hover {
+                border: 2px dashed rgb(252, 105, 94);
+                filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+                transition: all 0.4s ease-in;
+              }
+
+              @media screen and (max-width:900px){
+                width: 60%;
+              }
+            }
+          }
+          .popup_container {
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .popup {
+              width: 400px;
+              height: 150px;
+
+              box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+              background-color: #6de473;
+
+              border-radius: 1rem;
+              padding: 1rem 2rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              i {
+                position: absolute;
+                right: 5%;
+                top: 5%;
+                font-size: 1.5rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color 0.2s ease-in-out;
+                &:hover {
+                  color: red;
+                  transition: color 0.2s ease-in-out;
+                }
+              }
+              h4 {
+                color: #141414;
+                padding-top: 10px 0px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+              }
+              p {
+                padding-top: 5px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+              }
+              small {
+                font-weight: 550;
+                padding-top: 5px;
+              }
+
+              @media (max-width: 500px) {
+                width: 300px;
+                margin: 10px auto;
+                padding: 10px;
+              }
+            }
+
+            @media (max-width: 550px) {
+              top: 70%;
+              left: 50%;
+              transform: translate(-50%, -70%);
+              margin: 1rem auto;
+            }
+          }
+        }
+      }
+    }
+    .card3_box_9{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      height: 50px;
+      background-color: rgb(58, 71, 252);
+      
+      small{
+        font-size: 0.8rem;
+        font-weight: 550;
+        color: #ffffff;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        @media screen and (max-width:900px){
+        font-size: 0.6rem;
+        }
+      }
+      img{
+        width: 20px;
+        height: 20px;
+      }
+
+
+
+    }
+    @media screen and (max-width: 900px) {
+      min-width: 80%;
+      width: 80%;
+      min-height: 100vh;
+      height: auto;
+    }
+    @media screen and (max-width: 700px) {
+      min-width: 90%;
+      width: 90%;
+      min-height: 100vh;
+      height: auto;
+    }
+    @media screen and (max-width: 650px) {
+      min-width: 100%;
+      width: 100%;
+      min-height: 100vh;
+      height: auto;
+      border: 0px solid white;
+      border-radius: 10px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
