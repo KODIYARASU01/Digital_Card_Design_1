@@ -262,7 +262,28 @@ const NewCardDesign3 = () => {
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+  //openFullImage preview:
+  function openFullImage(pic) {
+    let fullImageBox = document.getElementById("fullImageBox");
+    let fullImage = document.getElementById("fullImage");
+    fullImageBox.style.display = "block";
+    fullImage.src = pic;
+  }
 
+  //Close FullImage Preview
+  function closeFullImage() {
+    let fullImageBox = document.getElementById("fullImageBox");
+
+    fullImageBox.style.display = "none";
+  };
+    // Create a ref for the element you want to scroll to
+    const targetRef = useRef(null);
+
+    // Function to handle image click
+    const handleImageClick = () => {
+      // Scroll to the target element
+      targetRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
   return (
     <>
       <div className="newCard_design_container">
@@ -276,17 +297,9 @@ const NewCardDesign3 = () => {
                 </div>
 
                 <div className="svg_bottom">
-                  <svg
-                    className="svg_top"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#fffbbf"
-                      fill-opacity="1"
-                      d="M0,224L12.6,208C25.3,192,51,160,76,154.7C101.1,149,126,171,152,192C176.8,213,202,235,227,208C252.6,181,278,107,303,69.3C328.4,32,354,32,379,53.3C404.2,75,429,117,455,144C480,171,505,181,531,181.3C555.8,181,581,171,606,154.7C631.6,139,657,117,682,112C707.4,107,733,117,758,144C783.2,171,808,213,834,208C858.9,203,884,149,909,133.3C934.7,117,960,139,985,133.3C1010.5,128,1036,96,1061,80C1086.3,64,1112,64,1137,101.3C1162.1,139,1187,213,1213,240C1237.9,267,1263,245,1288,202.7C1313.7,160,1339,96,1364,85.3C1389.5,75,1415,117,1427,138.7L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"
-                    ></path>
-                  </svg>
+                
+              
+                  <svg  className="svg_top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffbbf" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,181.3C480,181,600,107,720,101.3C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
               </div>
             </div>
@@ -294,7 +307,7 @@ const NewCardDesign3 = () => {
             <div className="card3_box-2">
               <div className="user_details">
                 <div className="logo">
-                  <img src={avatar} alt="logo" />
+                  <img src='https://img.freepik.com/free-photo/3d-cartoon-portrait-person-practicing-law-related-profession_23-2151419524.jpg?t=st=1714389694~exp=1714393294~hmac=0bc8ca78f8ca9b587854690fdc38466aad642af8c89580da671bec6334c91a8c&w=900' alt="logo" />
                   <div className="graph">
                     <img src={graph} alt="shape" />
                     <img src={shape} alt="layer" />
@@ -605,10 +618,62 @@ const NewCardDesign3 = () => {
                 <img src={title_graph} alt="title" />
               </div>
               <div className="gallery_container">
-              <div className="gall_box">
-                <img src={banner_img} alt="banner" />
+              <div className="full_image" id="fullImageBox">
+                <div className="close_Full_Image_gallery">
+                  <i
+                    class="bx bxs-message-square-x"
+                    onClick={closeFullImage}
+                  ></i>
+                </div>
+                <img src={banner_img} alt="gallery" id="fullImage" />
               </div>
+              <div className="col_1">
+                <img
+                  src="https://img.freepik.com/free-photo/strict-male-teacher-wearing-glasses-holding-points-mini-blackboard-sitting-table-with-school-tools-classroom_141793-114681.jpg?t=st=1714389401~exp=1714393001~hmac=0079fd411b20c268e819b2f1f0064951062160a7ba5148f353da5183f6792eab&w=900"
+                  alt="gall"
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/scared-covered-mouth-with-hand-male-teacher-wearing-glasses-sitting-table-with-school-tools-classroom_141793-114269.jpg?t=st=1714389421~exp=1714393021~hmac=4a9bc8ca2d0542d7c27df80e6cb5ab821e1300ba38d6b399a334e2f5da356f13&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/scared-male-teacher-wearing-glasses-holding-reading-book-sitting-table-with-school-tools-classroom_141793-114055.jpg?t=st=1714389443~exp=1714393043~hmac=4bb7b5aa350f82a47d4929abff9379dbc2ddd44d42df9f3c9452910d658b25e3&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                    <img
+                  src="https://img.freepik.com/free-photo/unpleased-male-teacher-wearing-glasses-points-with-pointer-stick-blackboard-sitting-table-with-school-tools-classroom_141793-114329.jpg?t=st=1714389461~exp=1714393061~hmac=a216ff1f7099d1e4154e8a4f187abd4aadcba25d76d5f8cad622b77b0cd6b716&w=900"
+                  alt="gall"
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
               </div>
+          
+
+              <div className="col_3">
+                <img
+                  src="https://img.freepik.com/free-photo/strict-points-side-male-teacher-wearing-glasses-sitting-table-with-school-tools-classroom_141793-114345.jpg?t=st=1714389501~exp=1714393101~hmac=55ef07c4175b2d16bf7383357c8b18d58b6e63f839f0dadc9b6d8f1fc08f162f&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/teacher-brunette-instructor-with-computer-suit-whiteboard-classroom-holding-pen_140725-163263.jpg?t=st=1714389519~exp=1714393119~hmac=c87ac7d259c48b0edc1c98bae5b02006004e14ccf50eec5972e373111065df1e&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/male-teacher-wearing-glasses-holding-abacus-sitting-table-with-school-tools-classroom_141793-114123.jpg?t=st=1714389536~exp=1714393136~hmac=deb14a1594b933e9c959a87a6240a1c8d020ae7a4a1233e36201d44cd6b8fc09&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                    <img
+                  src="https://img.freepik.com/free-photo/teacher-smart-instructor-grey-suit-classroom-with-computer-whiteboard-showing-silence-sign_140725-163421.jpg?t=st=1714389554~exp=1714393154~hmac=1ec1430ab8bdd87ca1f9dad44eb44021a215dc27883aeb8e46e4cc1b6f6065f7&w=900"
+                  alt="gall"
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+              </div>
+            </div>
             </div>
      {/* Testimonial */}
      <div className="card3_box_7">
@@ -666,11 +731,11 @@ const NewCardDesign3 = () => {
                     </div>
 
                 
-                    <svg    className="qrsvg_top"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#010101" fill-opacity="1" d="M0,32L13.3,53.3C26.7,75,53,117,80,133.3C106.7,149,133,139,160,128C186.7,117,213,107,240,101.3C266.7,96,293,96,320,90.7C346.7,85,373,75,400,74.7C426.7,75,453,85,480,101.3C506.7,117,533,139,560,154.7C586.7,171,613,181,640,165.3C666.7,149,693,107,720,96C746.7,85,773,107,800,112C826.7,117,853,107,880,85.3C906.7,64,933,32,960,26.7C986.7,21,1013,43,1040,48C1066.7,53,1093,43,1120,80C1146.7,117,1173,203,1200,197.3C1226.7,192,1253,96,1280,74.7C1306.7,53,1333,107,1360,144C1386.7,181,1413,203,1427,213.3L1440,224L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path></svg>
+                    <svg    className="qrsvg_top"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a7eaff" fill-opacity="1" d="M0,32L13.3,53.3C26.7,75,53,117,80,133.3C106.7,149,133,139,160,128C186.7,117,213,107,240,101.3C266.7,96,293,96,320,90.7C346.7,85,373,75,400,74.7C426.7,75,453,85,480,101.3C506.7,117,533,139,560,154.7C586.7,171,613,181,640,165.3C666.7,149,693,107,720,96C746.7,85,773,107,800,112C826.7,117,853,107,880,85.3C906.7,64,933,32,960,26.7C986.7,21,1013,43,1040,48C1066.7,53,1093,43,1120,80C1146.7,117,1173,203,1200,197.3C1226.7,192,1253,96,1280,74.7C1306.7,53,1333,107,1360,144C1386.7,181,1413,203,1427,213.3L1440,224L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path></svg>
             
                  
                  
-                    <svg className="qrsvg_bottom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#010101" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,250.7C320,213,400,139,480,122.7C560,107,640,149,720,149.3C800,149,880,107,960,106.7C1040,107,1120,149,1200,186.7C1280,224,1360,256,1400,272L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+                    <svg className="qrsvg_bottom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a7eaff" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,250.7C320,213,400,139,480,122.7C560,107,640,149,720,149.3C800,149,880,107,960,106.7C1040,107,1120,149,1200,186.7C1280,224,1360,256,1400,272L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
                   </div>
      </div>
      {/* Enquiries */}
