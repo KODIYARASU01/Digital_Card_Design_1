@@ -2,13 +2,13 @@ import React, { useRef, useEffect, useState } from "react";
 import "./NewCardDesign3.scss";
 import banner_img from "../assets/background2.jpg";
 import avatar from "../assets/profile.png";
-import shape from "../assets/g2.png";
-import graph from "../assets/graph3.png";
-import graph2 from "../assets/g3.png";
-import title_graph from "../assets/title3.png";
-import social_graph from "../assets/socialmedia_graph2.png";
-import sgraph from "../assets/s_graph.png";
-import sgraph1 from "../assets/s_graph1.png";
+import shape from "../assets/g4.png";
+import graph from "../assets/graph5.png";
+import graph2 from "../assets/g5.png";
+import title_graph from "../assets/title2.png";
+import social_graph from "../assets/graph5.png";
+import sgraph from "../assets/graph6.png";
+import sgraph1 from "../assets/graph6.png";
 import { Link, useParams } from "react-router-dom";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "react-quill/dist/quill.snow.css";
@@ -299,7 +299,8 @@ const NewCardDesign3 = () => {
                 <div className="svg_bottom">
                 
               
-                  <svg  className="svg_top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffbbf" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,181.3C480,181,600,107,720,101.3C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+               
+                  <svg  className="svg_top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#18e065" fill-opacity="1" d="M0,64L60,101.3C120,139,240,213,360,250.7C480,288,600,288,720,282.7C840,277,960,267,1080,266.7C1200,267,1320,277,1380,282.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
               </div>
             </div>
@@ -312,7 +313,7 @@ const NewCardDesign3 = () => {
                     <img src={graph} alt="shape" />
                     <img src={shape} alt="layer" />
                   </div>
-
+{/* 
                   <div className="alphabet">
                     <img
                       width="48"
@@ -332,7 +333,7 @@ const NewCardDesign3 = () => {
                       src="https://img.icons8.com/color/48/t-cute.png"
                       alt="t-cute"
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="details">
                   <p>Jayakumar C</p>
@@ -395,7 +396,7 @@ const NewCardDesign3 = () => {
             <div className="card3_box_3">
               <div className="contact_title">
                 <h4>Contact</h4>
-                <img src={title_graph} alt="title" />
+                {/*<img src={title_graph} alt="title" />*/}
               </div>
 
               <div className="contact_container">
@@ -469,7 +470,7 @@ const NewCardDesign3 = () => {
             <div className="card3_box_4">
               <div className="service_title">
                 <h4>Services</h4>
-                <img src={title_graph} alt="title" />
+                {/* <img src={title_graph} alt="title" /> */}
               </div>
 
               <div className="service_container">
@@ -579,7 +580,7 @@ const NewCardDesign3 = () => {
             <div className="card3_box_5">
               <div className="appoinment_title">
                 <h4>Make an Appoinment</h4>
-                <img src={title_graph} alt="title" />
+                {/* <img src={title_graph} alt="title" /> */}
               </div>
               <div className="appoinment_container">
                 <form action="">
@@ -615,7 +616,7 @@ const NewCardDesign3 = () => {
             <div className="card3_box_6">
             <div className="gallery_title">
                 <h4>Gallery</h4>
-                <img src={title_graph} alt="title" />
+                {/* <img src={title_graph} alt="title" /> */}
               </div>
               <div className="gallery_container">
               <div className="full_image" id="fullImageBox">
@@ -679,7 +680,7 @@ const NewCardDesign3 = () => {
      <div className="card3_box_7">
       <div className="testimonial_title">
         <h4>Testimonial</h4>
-        <img src={title_graph} alt="title" />
+        {/* <img src={title_graph} alt="title" /> */}
       </div>
 
       <div className="Testimonial">
@@ -731,19 +732,19 @@ const NewCardDesign3 = () => {
                     </div>
 
                 
-                    <svg    className="qrsvg_top"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a7eaff" fill-opacity="1" d="M0,32L13.3,53.3C26.7,75,53,117,80,133.3C106.7,149,133,139,160,128C186.7,117,213,107,240,101.3C266.7,96,293,96,320,90.7C346.7,85,373,75,400,74.7C426.7,75,453,85,480,101.3C506.7,117,533,139,560,154.7C586.7,171,613,181,640,165.3C666.7,149,693,107,720,96C746.7,85,773,107,800,112C826.7,117,853,107,880,85.3C906.7,64,933,32,960,26.7C986.7,21,1013,43,1040,48C1066.7,53,1093,43,1120,80C1146.7,117,1173,203,1200,197.3C1226.7,192,1253,96,1280,74.7C1306.7,53,1333,107,1360,144C1386.7,181,1413,203,1427,213.3L1440,224L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path></svg>
             
+                    <svg   className="qrsvg_top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L120,37.3C240,43,480,53,720,48C960,43,1200,21,1320,10.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
                  
                  
-                    <svg className="qrsvg_bottom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a7eaff" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,250.7C320,213,400,139,480,122.7C560,107,640,149,720,149.3C800,149,880,107,960,106.7C1040,107,1120,149,1200,186.7C1280,224,1360,256,1400,272L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+                    <svg className="qrsvg_bottom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,250.7C320,213,400,139,480,122.7C560,107,640,149,720,149.3C800,149,880,107,960,106.7C1040,107,1120,149,1200,186.7C1280,224,1360,256,1400,272L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
                   </div>
      </div>
      {/* Enquiries */}
 
      <div className="card3_box_8">
      <div className="inquries_title">
-        <h4>Interrogation</h4>
-        <img src={title_graph} alt="title" />
+        <h4>Make Your Inquiry</h4>
+        {/* <img src={title_graph} alt="title" /> */}
       </div>
       <div className="equiry_container">
                   <div className="enquiry_heading">
