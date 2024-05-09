@@ -9,7 +9,7 @@
 .newCard_design_container {
   width: 100vw;
   height: 100vh;
-  background-image: url('../assets/new_card_design3.2.jpg');
+  background-image: url('https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?t=st=1715256483~exp=1715260083~hmac=e7f199cdf5248b5e514a5537a1b51f6c130ee40db5c5f9381e79fc8664666de9&w=900');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,8 +33,8 @@
     z-index: 900;
     position: absolute;
     // background-color: #fffbbf;
-    background: linear-gradient(280deg ,#23e77c,#18e065);
-
+    background: linear-gradient(280deg ,#bbb6b6,#bbb6b6);
+box-shadow: 0px 4px 5px rgba(0,0,0,0.5);
     .card3_box-1 {
       position: relative;
       width: 100%;
@@ -381,6 +381,47 @@ place-items: center;
 
         @media (max-width:600px){
           padding: 1rem;
+        }
+      }
+      .add_to_contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+
+        button {
+          width: 50%;
+          padding: 10px 1rem;
+          outline: none;
+          border: transparent;
+          background-color: #ffffff;
+          color: #161616;
+          font-size: 0.9rem;
+          font-weight: 550;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          transition: all 0.4s ease-in-out;
+          i {
+            color: #1a1a1a;
+            transition: all 0.4s ease-in-out;
+          }
+
+          &:hover {
+            background-color: #fff;
+            color: #2e2e2e;
+            filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+            transition: all 0.4s ease-in-out;
+
+            i{
+              color: #2e2e2e;
+              transition: all 0.4s ease-in-out;
+            }
+          }
         }
       }
     }
@@ -869,7 +910,7 @@ place-items: center;
             margin: auto;
             width: 100%;
             height: 100%;
-            background: linear-gradient(280deg ,#cacbffd0,#a1e4ff);
+            background: linear-gradient(280deg ,#bbb6b6,#bbb6b6);
     
             // display: none;
     
@@ -1695,12 +1736,18 @@ img{
       gap: 10px;
       min-height: 50px;
       height: 50px;
-      background-color: rgb(65, 65, 65);
-      
+     
+      z-index: 100;
+      svg{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        z-index: -1;
+      }
       small{
         font-size: 0.7rem;
-        font-weight: 550;
-        color: #ffffff;
+        font-weight: bold;
+        color: #1b1b1b;
         letter-spacing: 1px;
         display: flex;
         align-items: center;
